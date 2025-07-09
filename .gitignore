@@ -1,0 +1,35 @@
+# .gitignore
+
+# Dependencies
+# 로컬에 설치된 npm 패키지 폴더입니다. 용량이 매우 크고, 
+# 다른 환경에서는 `npm install` 명령어로 새로 설치하므로 저장소에 포함시키지 않습니다.
+/node_modules
+
+# Build files
+# `npm run build` 또는 `npm run watch`로 생성되는 최종 CSS 파일입니다.
+# 원본인 `input.css`와 `tailwind.config.js`만 있으면 언제든 다시 만들 수 있습니다.
+# (하지만 Cloudflare Pages 빌드 설정에 따라 이 파일을 포함시켜야 할 수도 있습니다.
+# 현재 설정에서는 빌드 과정에서 생성되므로 제외하는 것이 맞습니다.)
+# /style.css
+
+# Log files
+# npm이 생성하는 로그 파일입니다.
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+# VSCode, WebStorm 등 다양한 코드 에디터가 생성하는 설정 폴더입니다.
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Operating System files
+# macOS나 Windows 운영체제가 자동으로 생성하는 시스템 파일입니다.
+.DS_Store
+Thumbs.db
